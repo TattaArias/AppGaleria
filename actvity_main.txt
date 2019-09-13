@@ -16,7 +16,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
-
+        
+    <Button
+        android:id="@+id/button_Galeria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:hint="Ir Galeria"
+        android:onClick="AbriGaleria"
+        android:text="Ir Galeria"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/button_Captura"
+        app:layout_constraintTop_toBottomOf="@+id/imagen" />
 
     <Button
         android:id="@+id/button_Captura"
@@ -45,6 +58,5 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_Captura" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
