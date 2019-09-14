@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requesCode, int resultCode, Intent data){
 
         if (requesCode == 100  && resultCode == RESULT_OK){
-            Toast.makeText(this,"here is your picture", Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"¡Tu fotografía ha sido tomada!", Toast.LENGTH_LONG).show();
             Bundle  extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             imagenLocal.setImageBitmap(imageBitmap);
