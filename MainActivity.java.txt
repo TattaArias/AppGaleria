@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         captura = (Button)findViewById(R.id.button_Captura);
         BVideo = (Button)findViewById(R.id.button_Video);
-        imagenLocal = (ImageView)findViewById(R.id.imagen);
+        imagenLocal = (ImageView)findViewById(R.id.imagen.imageview);
     }
     public void AbrirVideo (View view ){
         Intent takeVideoIntent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
